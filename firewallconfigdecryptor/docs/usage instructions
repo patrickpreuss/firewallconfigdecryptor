@@ -8,19 +8,11 @@ installer available at - https://github.com/dinesharanathunga/firewallconfigdecr
 
 Installer dependencies
 ----------------------
-
  'netaddr==0.7.10',
  'networkx>=1.7',
  'ipaddr==2.1.11',
- 'numpy==1.9.2',
  'configobj==4.7.0',
- 'pyparsing==2.0.3',
- 'pytest==2.7.0',
- 'six==1.9.0',
- 'dateutil==1.5.0',
- 'pytz',
- 'pyparsing',
- 'matplotlib==1.4.3',
+
 
 
 Pre-requisites
