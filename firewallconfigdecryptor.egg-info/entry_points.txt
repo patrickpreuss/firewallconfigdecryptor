@@ -1,0 +1,3 @@
+[console_scripts]
+firewallconfigdecryptor = firewallconfigdecryptor.console_script:console_entry
+

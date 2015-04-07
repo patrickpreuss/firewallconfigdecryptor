@@ -1,0 +1,126 @@
+==================================================================
+FirewallConfigDecryptor (FCD): firewall configuration parsing tool
+==================================================================
+
+source available at - <insert Github link>
+installer available at - <insert SDIST link>
+
+Installer dependencies
+----------------------
+
+NetworkX
+NetAddr
+...
+
+Pre-requisites
+---------------
+
+Python 2.X -
+yED Graph Editor -
+
+
+Installation on MAC-OSx
+----------------
+
+to install FCD python package from .tar.gz:
+
+$ sudo pip install firewallconfigurationdecryptor-0.1.tar.gz
+
+this will automatically check and install any dependencies missing on local system
+
+Installation on Linux
+---------------------
+
+$ sudo apt-get install python-pip
+$ pip install firewallconfigurationdecryptor-0.1.tar.gz
+
+this will automatically check and install any dependencies missing on local system
+
+Installation on Windows
+-------------
+
+TODO: provide .msi details
+
+
+Parsing firewall configurations:
+----------------------------
+
+to parse one or more Cisco PIX/IOS/ASA configuration text files located in a folder:
+
+$ firewallconfigurationdecryptor --config "<full-path-to-configuration-folder>"
+
+
+Parser output:
+--------------
+
+The output generated is stored in a "parser_output" folder created at the same-level as the configuration file input folder. This folder has the following tree structure:
+
+// service flow views (graphml format)
+service_explicit
+  tcp
+    host
+    zone
+       service_tcp_http.graphml
+       <other tcp services encountered.graphml>
+       service_tcp_http.pdf
+       <other tcp services encountered.pdf>
+  udp
+  icmp
+  eigrp
+  ip
+  <other ip protocols found>
+service_implicit
+service_final
+// zone-firewall models (graphml format)
+zone_fw_start.graphml
+zone_fw_interim.graphml
+zone_fw_final.graphml
+// zone-conduit model (graphml format)
+zone_conduit.graphml
+// zone breakdowns (graphml format)
+<zoneX.graphml>
+// zone-firewall models (pdf format)
+zone_fw_start.pdf
+zone_fw_interim.pdf
+zone_fw_final.pdf
+// zone-conduit model (pdf format)
+zone_conduit.pdf
+// zone breakdowns (pdf format)
+<zone breakdown for each zone - zoneX.pdf>
+
+To view any of the .graphml files:
+--------------------
+
+1. open yED Graph Editor application
+2. select 'open' and pick the particular .graphml file
+3. by default, graph properties are not automatically mapped to their label text. from the yED menu, select Edit->Properties Mapper
+4. If the mapping table (with column headings: Data Source, Map To, Conversion) is empty:
+      select the + sign on the right of the table - this will add a default mapping of label->Label Text
+5. If the mapping exists, select 'New Configuration (Node)' from the list of configuration on the left. Then select 'Apply'
+   Similarly select 'New Configuration (Edge)' and select 'Apply'
+   Then select 'Ok'
+6. From the yED menu select Layout->Circular, keep the default settings and choose 'Ok'
+7. You should now be able to view the graph layout with node and edge properties populated. To view Node and Edge properties select the particular Node/Edge and scroll
+   to the 'Data' section under the 'Properties View' panel that appears to your right.
+
+P.S: make sure to SAVE the file once you follow the above steps, so next time when you open it, you wont have to redo them.
+     yEd only supports directed graphs, so the direction should be ignored for zone-firewall and zone-conduit models as they are un-directed.
+     however, the service-flows are directed graphs and are shown correctly when opened.
+
+Known limitations
+-----------
+
+Only parses a single Cisco ASA configuration file at a time. Does not synthesise output from individual firewall configuration files.
+Zone breakdowns are not created for unknown zones attached to gateways found through route processing. This is simply because we did not
+have access to actual gateway configurations at the time and could not precisely state the composition of these zones.
+
+Currently the tool supports IPV4 configurations only.
+
+
+
+
+
+
+
+
+

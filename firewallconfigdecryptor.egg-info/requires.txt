@@ -1,0 +1,3 @@
+netaddr==0.7.10
+networkx>=1.7
+ipaddr==2.1.11
