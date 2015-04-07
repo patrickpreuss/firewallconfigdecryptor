@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b788212b-573c-41e4-82ba-883d8cb60138" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/firewallconfigdecryptor-0.1.tar.gz" afterPath="$PROJECT_DIR$/dist/firewallconfigdecryptor-0.1.tar.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firewallconfigdecryptor.egg-info/requires.txt" afterPath="$PROJECT_DIR$/firewallconfigdecryptor.egg-info/requires.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="firewallconfigdecryptor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,7 +95,7 @@
       <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="47" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.7494781" vertical-offset="436" max-vertical-offset="1260">
+            <state line="46" column="10" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.44444445" vertical-offset="436" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -553,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="47" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.7494781" vertical-offset="436" max-vertical-offset="1260">
+        <state line="46" column="10" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.44444445" vertical-offset="436" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
