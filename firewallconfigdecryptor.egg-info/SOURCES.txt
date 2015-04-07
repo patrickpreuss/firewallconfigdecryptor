@@ -25,3 +25,6 @@ firewallconfigdecryptor.egg-info/requires.txt
 firewallconfigdecryptor.egg-info/top_level.txt
 firewallconfigdecryptor.egg-info/zip-safe
 firewallconfigdecryptor/config/configspec.cfg
+firewallconfigdecryptor/parsers/__init__.py
+firewallconfigdecryptor/parsers/platform/__init__.py
+firewallconfigdecryptor/parsers/platform/cisco.py

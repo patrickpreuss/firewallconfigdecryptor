@@ -43,6 +43,9 @@ class ConfigParser:
 
             # Load configs
             log.info("Reading firewall configuration(s)..")
+            if not os.path.exists(config_folder) :
+                raise ParserException('config-file folder', resources['folder_missing'])
+
             for file in os.listdir(config_folder):
                 if file.endswith(".txt"):
                     config_file = open(os.path.join(config_folder, file),'r+')

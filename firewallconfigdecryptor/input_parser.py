@@ -22,7 +22,6 @@ class InputParser(object):
             parser.Parse(folder)
 
         except BaseException,e:
-            log.error("%s"%e)
             if e.message:
                 log.error(e.message)
             else:

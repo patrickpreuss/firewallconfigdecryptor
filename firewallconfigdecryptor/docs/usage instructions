@@ -2,22 +2,29 @@
 FirewallConfigDecryptor (FCD): firewall configuration parsing tool
 ==================================================================
 
-source available at - <insert Github link>
-installer available at - <insert SDIST link>
+source available at - https://github.com/dinesharanathunga/firewallconfigdecryptor
+
+installer available at - https://github.com/dinesharanathunga/firewallconfigdecryptor/tree/master/dist/
 
 Installer dependencies
 ----------------------
 
-NetworkX
-NetAddr
-...
+ 'netaddr==0.7.10',
+ 'networkx>=1.7',
+ 'ipaddr==2.1.11',
+ 'matplotlib==1.4.3',
+ 'numpy==1.9.2',
+ 'configobj==4.7.0',
+ 'pyparsing==2.0.3',
+ 'pytest==2.7.0',
+ 'six==1.9.0',
+
 
 Pre-requisites
 ---------------
 
 Python 2.X -
 yED Graph Editor -
-
 
 Installation on MAC-OSx
 ----------------

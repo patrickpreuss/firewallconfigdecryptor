@@ -1,6 +1,7 @@
 resources = { 'value_null':"value cannot be null or empty",
               'file_empty':"file is empty",
               'folder_empty':'folder is empty',
+              'folder_missing':'folder does not exist',
               'no_interfaces_defined':"no interfaces defined for firewall",
               'no_acls_assigned_to_interfaces':"no ACLs assigned to firewall interfaces",
               'acl_definition_missing':"ACL definition missing",

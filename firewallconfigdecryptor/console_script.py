@@ -77,12 +77,13 @@ if __name__ == '__main__':
 
     # Gets firewall configuration path
     # MODIFY this path to input your own Cisco ASA series firewall configuration file
-    cwd = os.getcwd()
-    firewall_configuration_file_path = os.path.join(cwd, 'sample_config')
+    #cwd = os.getcwd()
+    #firewall_configuration_file_path = os.path.join(cwd, 'sample_config')
 
     # Load config and parse
-    parser=ConfigParser()
-    parser.Parse("F:\Parser Input-pwc")
+    #parser=ConfigParser()
+    #parser.Parse("F:\Parser Input-pwc")
+    #InputParser().ParseDeviceConfigurations('test')#("F:\Parser Input-pwc")
 
     #import sys
     #global warningfound
@@ -97,6 +98,8 @@ if __name__ == '__main__':
     #main(args)
     #args= parse_options("--deploy start")
     #main(args)
+
+
 
 
 

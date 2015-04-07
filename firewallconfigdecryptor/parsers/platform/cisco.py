@@ -1,13 +1,12 @@
-from exception import ParserException
-from device import Firewall, Gateway, FirewallInterface
-from security import ACL, InterfaceACL, SecurityZone, SecurityConduit, ConduitFirewallArchitecture, RuleInteraction
-from enums import RuleOperation, RuleInteractionType, GraphAttribute, SecurityElement, ServiceProtocol, RuleEffect
-from utilities import Util, Singleton
-from security import AtomicACE
+from firewallconfigdecryptor.exception import ParserException
+from firewallconfigdecryptor.device import Firewall, Gateway, FirewallInterface
+from firewallconfigdecryptor.security import ACL, InterfaceACL, SecurityZone, SecurityConduit, ConduitFirewallArchitecture, RuleInteraction,AtomicACE
+from firewallconfigdecryptor.enums import RuleOperation, RuleInteractionType, GraphAttribute, SecurityElement, ServiceProtocol, RuleEffect
+from firewallconfigdecryptor.utilities import Util, Singleton
 import matplotlib.pyplot as plt
 import networkx as nx
-import log
-import properties
+import firewallconfigdecryptor.log
+import firewallconfigdecryptor.properties
 import re
 import os
 import ipaddr
