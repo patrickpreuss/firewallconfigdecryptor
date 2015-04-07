@@ -42,6 +42,8 @@ setup(name="firewallconfigdecryptor",
          'six==1.9.0',
          'pytz',
          'pyparsing',
+         'freetype',
+         'png',
          'matplotlib==1.4.3',
          ],
 

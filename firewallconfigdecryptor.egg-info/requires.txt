@@ -8,4 +8,6 @@ pytest==2.7.0
 six==1.9.0
 pytz
 pyparsing
+freetype
+png
 matplotlib==1.4.3
